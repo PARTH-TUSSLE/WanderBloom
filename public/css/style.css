@@ -1,0 +1,291 @@
+body {
+  font-family: "Plus Jakarta Sans", sans-serif !important;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.container {
+  flex: 1;
+}
+
+.navbar {
+  height: 5rem;
+  background-color: white !important;
+}
+
+.ri-compass-line {
+  color: #fe424d;
+  font-size: 2rem;
+}
+
+.nav-link {
+  color: #222 !important;
+}
+
+.f-info-links a {
+  text-decoration: none;
+  color: #222;
+}
+
+.f-info-links a:hover {
+  text-decoration: underline;
+}
+
+.f-info-links,
+.f-info-socials,
+.f-info-brand {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.f-info-socials i {
+  font-size: 1.3rem;
+  margin-right: 1rem;
+}
+
+.f-info {
+  text-align: center;
+  height: 8rem;
+  background-color: #ebebeb;
+  display: flex;
+  justify-content: center;
+  align-items: space-evenly;
+  flex-wrap: wrap;
+}
+
+/* CARDS */
+
+.listing-card {
+  border: none !important;
+  margin-bottom: 2rem;
+}
+
+.card-img-top {
+  border-radius: 1rem !important;
+  width: 100% !important;
+  object-fit: cover !important;
+}
+
+.card-body {
+  padding: 0 !important;
+}
+
+.card-text p {
+  font-weight: 400 !important;
+}
+
+.listing-link {
+  text-decoration: none !important;
+}
+
+/* CARD EFFECT */
+.card-img-overlay {
+  opacity: 0;
+}
+
+.card-img-overlay:hover {
+  opacity: 0.2;
+  background-color: white;
+}
+
+.add-btn {
+  background-color: #fe424d !important;
+  border: none !important;
+}
+
+.edit-btn {
+  background-color: #fe424d !important;
+  border: none !important;
+}
+
+.show-img{
+  height: 30vh;
+}
+
+.btns{
+  display: flex;
+}
+
+.show-card{
+  padding: 0;
+}
+#map {
+   height: 500px;
+   width: 106vh;
+   border-radius: 1rem;
+  }
+
+
+  
+  /* Media query for medium screens (769px to 992px) */
+  @media (min-width: 743px) and (max-width: 1024px) {
+    #map {
+      width: 60vw; /* Adjust width to 80% of the viewport width */
+      height: 400px; /* Adjust height for medium screens */
+    }
+  }
+
+  @media (min-width: 343px) and (max-width: 844px) {
+    #map {
+      width: 70vw; /* Adjust width to 80% of the viewport width */
+      height: 300px; /* Adjust height for medium screens */
+    }
+  }
+
+  @media (min-width: 343px) and (max-width: 844px) {
+   .show-delete {
+     margin-left: 4rem !important;
+    }
+    .show-edit{
+      width: 100px !important;
+    }
+    .card-img-top{
+      width: 70vw !important;
+    }
+    }
+
+    @media (min-width: 343px) and (max-width: 844px) {
+      .review-card {
+        max-width: 100% !important;
+        padding: 10px !important;
+      }
+    
+      .starability-result {
+        width: 90px !important;
+        height: 18px !important;
+        margin: 0 auto !important;
+        background-image: none !important;
+      }
+    
+      .starability-result:after {
+        background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAA8CAMAAABGivqtAAAAxlBMVEUAAACZmZn2viTHuJ72viOampqampr1viSampr3vySampqdnZ34wiX1vSSampr1vSOZmZmampr1viT2vSOampr2viT2viSampr2viSampr2vyX4vyWbm5v3vSSdnZ32wSadnZ36wCWcnJyZmZn/wSr/2ySampr2vSP2viSZmZn2vSSZmZn2vST2viSampr2viSbm5ubm5uZmZn1vSSampqbm5v2vSWampqampr3vSf5wiT5vyagoKD/xCmkpKT/yCSZmZn1vSO4V2dEAAAAQHRSTlMA+vsG9fO6uqdgRSIi7+3q39XVqZWVgnJyX09HPDw1NTAwKRkYB+jh3L6+srKijY2Ef2lpYllZUU5CKigWFQ4Oneh1twAAAZlJREFUOMuV0mdzAiEQBmDgWq4YTWIvKRqT2Htv8P//VJCTGfYQZnw/3fJ4tyO76KE0m1b2fZu+U/pu4QGlA7N+Up5PIz9d+cmkbSrSNr9seT3GKeNYIyeO5j16S28exY5suK0U/QKmmeCCX6xs22hJLVkitMImxCvEs8EG3SCRCN/ViFPqnq5epIzZ07QJJvkM9Tkz1xnkmXbfSvR7f4H8AtXBkLGj74mMvjM1+VHZpAZ4LM4K/LBWEI9jwP71v1ZEQ6dyvQMf8A/1pmdZnKce/VH1iIsdte4U8VEtY23xOujxtFpWDgKbfjD2YeEhY0OzfjGeLyO/XfnNpAcmcjDwKOXRfU1IyiTRyEkaiz67pb9oJHJb9vVqKfgjLBPyF5Sq9T0KmSUhQmtiQrJGPHVi0DoSabj31G2gW3buHd0pY85lNdcCk8xlNDPXMuSyNiwl+theIb9C7RLIpKvviYy+M6H8qGwSAp6Is19+GP6KxwnggJ/kq6Jht5rnRQA4z9zyRRaXssvyqp5I6Vutv0vkpJaJtnjpz/8B19ytIayazLoAAAAASUVORK5CYII=") !important;
+        background-position: 0 -18px !important;
+        background-size: 18px 36px !important;
+        width: 90px !important;
+        height: 18px !important;
+        content: '' !important;
+        display: block !important;
+        position: absolute !important;
+      }
+    
+      .starability-result[data-rating="1"]:after { width: 18px !important; }
+      .starability-result[data-rating="2"]:after { width: 36px !important; }
+      .starability-result[data-rating="3"]:after { width: 54px !important; }
+      .starability-result[data-rating="4"]:after { width: 72px !important; }
+      .starability-result[data-rating="5"]:after { width: 90px !important; }
+    
+      .review-text {
+        font-size: 0.9rem !important;
+      }
+    
+      .review-author {
+        font-size: 0.8rem !important;
+      }
+    
+      .btn-sm {
+        padding: 0.2rem 0.4rem !important;
+        font-size: 0.8rem !important;
+      }
+    }
+
+    @media (min-width: 343px) and (max-width: 767px) {
+      .card-img-top {
+        width: 90% !important; /* Adjust the width as needed */
+      }
+    }
+    
+
+    @media (min-width: 343px) and (max-width: 767px) {
+      #filters {
+        flex-wrap: wrap !important;
+        justify-content: space-between !important;
+      }
+    
+      .filter {
+        width: 22% !important; /* Adjust this value to fit 4 filters in one line */
+        margin-right: 0 !important;
+        margin-bottom: 1rem !important;
+      }
+    
+      /* Hide all filters after the first 6 */
+      .filter:nth-child(n+7) {
+        display: none !important;
+      }
+    
+      /* Adjust the width for the last two filters in the second row */
+      .filter:nth-child(5),
+      .filter:nth-child(6) {
+        width: 30% !important; /* Adjust this value to make space for the tax switch */
+      }
+    
+      .tax-toggle {
+        width: 8rem !important; /* Adjust this value to fit next to the last two filters */
+        margin-left: 0 !important;
+        margin-top: 0.5rem !important;
+        font-size: 1rem !important;
+      }
+    
+      /* Adjust the tax switch layout */
+      .tax-toggle .form-check-reverse {
+        flex-direction: column !important;
+        align-items: flex-start !important;
+      }
+    
+      .tax-toggle .form-check-input {
+        margin-left: 0 !important;
+        margin-top: 0.5rem !important;
+      }
+    
+      .tax-toggle .form-check-label {
+        font-size: 0.8rem !important;
+        line-height: 1.2 !important;
+      }
+  
+    }
+
+    
+    @media (max-width: 343px) and (max-width: 700px) {
+      .card-img-top {
+        width: 100% !important; /* Adjust the width as needed */
+      }
+    }
+
+    @media (max-width: 767px) {
+      .navbar-collapse {
+        background-color: rgba(8, 7, 7, 0.9) !important; /* Semi-transparent white background */
+        padding: 1rem !important;
+        border-radius: 0.5rem !important;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5) !important;
+        color: white !important;
+      }
+    
+      .navbar-nav {
+        flex-direction: column-reverse !important; /* Reverse the order of nav items */
+      }
+    
+      .navbar-nav .nav-item {
+        margin-bottom: 0.5rem !important;
+      }
+    
+      .navbar-nav .d-flex {
+        width: 100% !important;
+        margin-bottom: 1rem !important;
+      }
+    
+      .search-input {
+        width: 80% !important;
+        font-size: 0.75rem !important;
+      }
+    
+      .search-btn {
+        width: 30% !important;
+        margin-top: 0.5rem !important;
+        padding: 0 0.5rem 0 0.5rem !important;
+      }
+      .nav-link{
+        color:white !important ;
+      }
+    }
