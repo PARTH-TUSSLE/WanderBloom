@@ -25,8 +25,7 @@ module.exports.index = async (req, res) => {
   }
 
 if (allListings.length == 0) {
-  req.flash("error", "No listings found matching your search criteria.");
-  return res.redirect("/listings");
+   req.flash("error", "No listings found matching your search criteria.");
 }
 
   res.render("./listings/index.ejs", { allListings });

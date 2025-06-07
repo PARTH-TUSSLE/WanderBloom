@@ -33,6 +33,7 @@ const listingSchema = new Schema({
     type: Schema.Types.ObjectId,
     ref: "User",
   },
+
   geometry: {
     type: {
       type: String, // Don't do `{ location: { type: String } }`
@@ -55,7 +56,7 @@ const listingSchema = new Schema({
       "Camping",
       "Farms",
       "Arctic",
-      "Islands",
+      "House Boats",
     ],
   },
 });

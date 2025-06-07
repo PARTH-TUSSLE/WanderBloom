@@ -23,14 +23,17 @@ const multer = require("multer");
 const upload = multer({ dest: "uploads/" });
 
 // const MONGO_URL = "mongodb://127.0.0.1:27017/wanderbloom";
-const dbUrl = process.env.ATLASDB_URL;
+const dbUrl = process.env.ATLAS_URL;
 
 async function main() {
-  await mongoose.connect(MONGO_URL);
+  await mongoose.connect(dbUrl, {
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+  });
 }
 main()
   .then((res) => {
-    console.log("Connection to DB Successful!");
+    console.log("Connection to AtlasDB Successful!");
   })
   .catch((err) => {
     console.log(err);
@@ -44,7 +47,7 @@ app.engine("ejs", ejsMate);
 app.use(express.static(path.join(__dirname, "/public")));
 
 const store = MongoStore.create({
-  mongoUrl: MONGO_URL,
+  mongoUrl: dbUrl,
   crypto: {
     secret: process.env.SECRET,
   },

@@ -11,7 +11,7 @@ const sampleListings = [
     location: "Malibu",
     country: "United States",
     geometry: { type: "Point", coordinates: [-118.788193, 34.031246] },
-    category: "Islands",
+    category: "House Boats",
   },
   {
     title: "Modern Loft in Downtown",
@@ -25,7 +25,7 @@ const sampleListings = [
     location: "New York City",
     country: "United States",
     geometry: { type: "Point", coordinates: [-73.935242, 40.73061] },
-    category: "Islands",
+    category: "House Boats",
   },
   {
     title: "Mountain Retreat",
@@ -81,7 +81,7 @@ const sampleListings = [
     location: "Cancun",
     country: "Mexico",
     geometry: { type: "Point", coordinates: [-86.8515, 21.1619] },
-    category: "Islands",
+    category: "House Boats",
   },
   {
     title: "Rustic Cabin by the Lake",
@@ -109,7 +109,7 @@ const sampleListings = [
     location: "Los Angeles",
     country: "United States",
     geometry: { type: "Point", coordinates: [-118.243683, 34.052235] },
-    category: "Islands",
+    category: "House Boats",
   },
   {
     title: "Ski-In/Ski-Out Chalet",
@@ -123,7 +123,7 @@ const sampleListings = [
     location: "Verbier",
     country: "Switzerland",
     geometry: { type: "Point", coordinates: [7.2286, 46.0961] },
-    category: "Islands",
+    category: "House Boats",
   },
   {
     title: "Safari Lodge in the Serengeti",
@@ -165,7 +165,7 @@ const sampleListings = [
     location: "Fiji",
     country: "Fiji",
     geometry: { type: "Point", coordinates: [178.065, -17.7134] },
-    category: "Islands",
+    category: "House Boats",
   },
   {
     title: "Charming Cottage in the Cotswolds",
@@ -179,7 +179,7 @@ const sampleListings = [
     location: "Cotswolds",
     country: "United Kingdom",
     geometry: { type: "Point", coordinates: [-1.8839, 51.795] },
-    category: "Islands",
+    category: "House Boats",
   },
 
   {
@@ -208,7 +208,7 @@ const sampleListings = [
     location: "Bali",
     country: "Indonesia",
     geometry: { type: "Point", coordinates: [115.216667, -8.65] },
-    category: "Islands",
+    category: "House Boats",
   },
   {
     title: "Mountain View Cabin in Banff",
@@ -264,7 +264,7 @@ const sampleListings = [
     location: "Scottish Highlands",
     country: "United Kingdom",
     geometry: { type: "Point", coordinates: [-4.71, 57.12] },
-    category: "Islands",
+    category: "House Boats",
   },
   {
     title: "Desert Oasis in Dubai",
@@ -376,7 +376,7 @@ const sampleListings = [
     location: "Maldives",
     country: "Maldives",
     geometry: { type: "Point", coordinates: [73.2207, 3.2028] },
-    category: "Islands",
+    category: "House Boats",
   },
   {
     title: "Ski Chalet in Aspen",
@@ -404,7 +404,7 @@ const sampleListings = [
     location: "Costa Rica",
     country: "Costa Rica",
     geometry: { type: "Point", coordinates: [-83.7534, 9.7489] },
-    category: "Islands",
+    category: "House Boats",
   },
 ];
 
