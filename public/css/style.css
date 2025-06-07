@@ -5,6 +5,19 @@ body {
   min-height: 100vh;
 }
 
+.brand-name-wb{
+  display: inline;
+  font-family: "Plus Jakarta Sans",
+    sans-serif !important;
+    font-size: 1.5rem !important;
+}
+
+.logged-in-user{
+  display: inline;
+  font-family: "Plus Jakarta Sans",
+    sans-serif !important;
+}
+
 .container {
   flex: 1;
 }
@@ -250,9 +263,30 @@ body {
     }
 
     
-    @media (max-width: 343px) and (max-width: 700px) {
+    @media (min-width: 343px) and (max-width: 700px) {
       .card-img-top {
         width: 100% !important; /* Adjust the width as needed */
+      }
+      /* .show-card{
+        width: 200px;
+      } */
+      .show-img{
+        width: 250px !important;
+      }
+      .show-review {
+        width: 100% !important; /* Make each review take the full width */
+        margin-bottom: 1rem; /* Add some space between reviews */
+        padding: 0.2rem;
+      }
+      .show-review {
+        padding: 1.5rem !important;
+      }
+      
+      .starability-result {
+        display: inline-block !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        vertical-align: middle !important;
       }
     }
 

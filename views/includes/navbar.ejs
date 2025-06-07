@@ -23,12 +23,13 @@
         font-size: 0.9rem;
       }
     </style>
+    <link rel="stylesheet" href="/css/style.css">
   </head>
   <body>
     <nav class="navbar navbar-expand-md bg-body-light border-bottom sticky-top">
       <div class="container-fluid">
         <a class="navbar-brand" href="/listings"
-          ><i class="ri-compass-line"></i
+          ><i class="ri-compass-line"> &nbsp;<p class="brand-name-wb">WanderBloom</p></i
         ></a>
         <button
           class="navbar-toggler"
@@ -55,11 +56,13 @@
           </div>
 
           <div class="navbar-nav ms-auto">
-            <a class="nav-link" href="/listings/new">Add new Listing</a>
+            <a class="nav-link" href="/listings/new">Add new Property</a> &nbsp; &nbsp; &nbsp; 
             <% if(!currUser){ %>
             <a class="nav-link" href="/signup"> <b>Sign up</b></a>
             <a class="nav-link" href="/login"> <b>Log in</b></a>
             <% } %> <% if(currUser){ %>
+              <i class="nav-link ri-user-3-fill">&nbsp;<p class="logged-in-user"><%= currUser.username %></p></i>
+
             <a class="nav-link" href="/logout"><b>Log out</b></a>
             <% } %>
           </div>
