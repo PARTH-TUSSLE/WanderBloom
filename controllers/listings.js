@@ -24,9 +24,10 @@ module.exports.index = async (req, res) => {
     allListings = await Listing.find({});
   }
 
-// if (allListings.length == 0) {
-//    req.flash("error", "No listings found matching your search criteria.");
-// }
+if (allListings.length == 0) {
+   req.flash("error", "No listings found matching your search criteria.")
+   return res.redirect("/listings");
+}
 
   res.render("./listings/index.ejs", { allListings });
 };
@@ -107,17 +108,18 @@ module.exports.renderEditForm = async (req, res) => {
   res.render("./listings/edit.ejs", { listing, originalImageUrl });
 };
 
+
 module.exports.updateListing = async (req, res) => {
   let { id } = req.params;
   let listing = await Listing.findByIdAndUpdate(id, { ...req.body.listing });
 
-  if(typeof req.file !== "undefined"){
+  if (typeof req.file !== "undefined") {
     let url = req.file.path;
     let filename = req.file.filename;
     listing.image = { url, filename };
-    await listing.save();
   }
- ;
+
+  await listing.save();
   req.flash("success", "Listing Updated!");
   res.redirect(`/listings/${id}`);
 };

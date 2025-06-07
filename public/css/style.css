@@ -118,6 +118,9 @@ body {
    border-radius: 1rem;
   }
 
+  .show-review{
+    padding: 1.5rem;
+  }
 
   
   /* Media query for medium screens (769px to 992px) */
