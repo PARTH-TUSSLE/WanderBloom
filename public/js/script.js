@@ -33,7 +33,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // Add a media query listener
   const mediaQuery = window.matchMedia(
-    "(min-width: 389px) and (max-width: 844px)"
+    "(min-width: 343px) and (max-width: 844px)"
   );
 
   function handleMediaQueryChange(e) {
